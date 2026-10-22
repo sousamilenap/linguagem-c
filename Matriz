@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int a[2][2];
+    int b [2][2];
+    int soma [2][2];
+    //Matriz A
+    for(int h = 0; h < 2; h++){
+        for(int w = 0; w < 2; w++){
+            printf("Digite o valor da linha %d e coluna %d: ", h, w);
+            scanf("%d", &a[h][w]);
+        }
+    }//Matriz B
+    for(int h = 0; h < 2; h++){
+        for(int w = 0; w < 2; w++){
+            printf("Digite o valor da linha %d e coluna %d: ", h, w);
+            scanf("%d", &b[h][w]);
+        }
+    }//Soma
+     for(int h = 0; h < 2; h++){
+        for(int w = 0; w < 2; w++){
+                soma[h][w] = a[h][w] + b[h][w];
+
+
+        }
+    }//Impressão
+    for(int h = 0; h < 2; h++){
+        for(int w = 0; w < 2; w++){
+                printf("%d ", soma[h][w]);
+        if(w==1){
+            printf("\n");
+        }
+
+        }
+    }
+}
